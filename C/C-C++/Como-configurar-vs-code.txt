@@ -1,0 +1,28 @@
+Instalação e configuração vs code
+
+1. Extensão portuguese 
+2. Extensão LiveServer
+3. Extensão c/c++ microsoft 
+4. Extensão compile run c/c++
+
+5. Instalar mingw -https://sourceforge.net/projects/mingw/files/latest/download
+5.1 Instalar pacote mingw32-gcc-g++ 
+5.2 Instalation - "apply changes"
+
+6. Configurar variavel de ambiente
+6.1 Acessar "Este computador"
+6.2 Propriedades (Alt + Enter)
+6.3 Configurações Avançadas do Sistema
+6.4 Variaveis de ambiente
+6.5 Variaves de sistema 
+6.6 Clicar em "Path" 
+6.7 Clicar em novo
+6.8 colar o endereço : C:\MinGW\bin
+
+7. No vscode acessar configuraçoes (Ctrl + , )
+7.1 Na barra de pesquisar digitar "Word wrap" e ativar na opçao Editor: Word Wrap
+7.2 Pesquisa "size" e aumenta o tamanho da fonte para 18 na opçao Editor: Font Size 
+7.2 
+
+8. Ctrl + Shift + p 
+pesquisar "Emmet: Quebrar Linha com abreviação

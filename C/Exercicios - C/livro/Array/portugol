@@ -1,0 +1,31 @@
+
+	funcao inicio()
+	{
+		inteiro number
+		inteiro i 
+		escreva("Quantos elementos da sequencia deseja ver? ")
+		leia(number)
+
+	
+		
+		para ( i = 1; i <= number ; i++)
+		{
+			escreva(fibonacci(i), " ")  // Calcula e exibe o número da sequência na posição atual
+		}
+        	
+	}
+	
+	funcao inteiro fibonacci(inteiro n)
+	{		
+		se (n == 1)
+		{
+			retorne 0
+		}
+		senao se (n == 2)
+		{ 
+			retorne 1
+		}
+
+		retorne fibonacci(n - 1) + fibonacci(n - 2)		
+	}
+}

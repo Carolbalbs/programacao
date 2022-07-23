@@ -1,0 +1,18 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "iomanip": "cpp",
+        "random": "c",
+        "string": "c",
+        "JOGOSaZAR.C": "cpp",
+        "jogoAzar.C": "cpp",
+        "EX01.C": "cpp",
+        "sstream": "c"
+    },
+    "C_Cpp.files.exclude": {
+    
+        "**/.vscode": true
+    }
+}

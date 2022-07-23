@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.jpg" type="image/jpg"> 
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.jpg" type="image/jpg">
+        <img src="imagens/fotog.jpg" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+   <!-- <audio src="media/19th-Floor.mp3" controls autoplay muted></audio> -->
+   <!--MP3 - WAV - OGG-->
+   <audio preload="metadata" autoplay muted controls loop >
+    <source src="media/19th-Floor.mp3" type="audio/mpeg">
+        <source src="media/19th-Floor.ogg" type="audio/ogg">
+        <source src="media/19th-Floor.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir audio. <a href="media/19th-Floor.mp3">Clique aqui para fazer o download do arquivo MP3</a></p>
+   </audio>
+   <h1>Reproduzindo videos</h1> 
+   <video poster="imagens/fotom.jpg" preload="metadata" width="500px" controls muted autoplay loop>
+       <source src="media/Chuva-1.m4v" type="video/mp4">
+       <source src="media/chuva.mp4" type="video/mp4">
+       <source src="media/Chuva-1.webm" type="video/webm">
+       <source src="media/chuva.ogv" type="video/ogg">
+       <p>Infelizmente seu navegador não está disponivel para reprodução de video.</p>
+   </video> 
+    
+   <h2>youtube</h2>    
+    <iframe reload="metadata" autoplay muted controls width="560" height="315" src="https://www.youtube.com/embed/RCOSoX2YLbw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>>

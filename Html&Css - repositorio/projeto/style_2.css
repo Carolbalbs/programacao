@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container_1{
+    background-color: #F2F2F2;
+    
+}

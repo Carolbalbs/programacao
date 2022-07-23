@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+
+<style>
+    @font-face {
+        font-family: 'love';
+        src: url('fonte/love\ larry\ ttf.ttf') format('truetype'), url('fonte/love\ larry\ .otf') format('opentype');
+        
+    }
+    @font-face {
+        font-family: 'uni';
+        src: url('fonte/mini_pixel-7.ttf') format('truetype'), url('fonte/love\ larry\ .otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'tex';
+        src: url('fonte/varsity_regular.otf'), format('opentype'), url('fonte/varsity_regular.ttf') format('truetype');
+    }
+    /*
+        Tipos de format() 
+    ------------------------
+        - opentype (otf)
+        - truetype (ttf)
+        - embaded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - sgv
+    */
+  
+    h1{
+        font-family: 'love','Times New Roman', Times, serif;
+        font-size: 3.5em ;   
+        font-weight: normal;
+        font-style: normal;
+    }
+    h2{
+        font-family: 'uni', 'Times New Roman', Times, serif;
+        font-size: 2.5em;
+        font-weight: normal;
+        font-style: normal;
+    }
+    p{
+        font-family: 'text';
+        font-size: 1.5em;
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+</head>
+<body>
+    <h1>Fontes Importadas</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tempore laborum asperiores magni quas beatae ea aperiam sequi reprehenderit dignissimos adipisci, praesentium fugiat suscipit, voluptates dolor. Sunt saepe nihil aperiam?
+    </p>
+    <h2>Subtitulo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas voluptate minima officiis eos eaque fugiat aperiam obcaecati error voluptas id repudiandae beatae, similique eum optio, voluptatum dolore soluta asperiores!
+    </p>
+</body>
+</html>

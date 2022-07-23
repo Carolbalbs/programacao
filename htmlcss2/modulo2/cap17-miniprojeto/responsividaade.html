@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando responsividade</title>
+    <style>
+        /*
+
+        max-width = tamanho maximo da tela em que a responsividade personalizada estará ativa.
+        min-width = tamanho minimo para ativar a responsividade de tela de alguma imagem
+        com no minimo 320px a img começa a se adaptar, até no maximo 800px a imagem vai se adaptar, a partir disso ela passa a crescer as bordas do body
+        */
+        /*
+        src media usando max-width na imagens, usa-se pra deixa a imagem ampliada até que o tamanho do site seja superior ao declarado. Quando ultrapassa a imagem se adapta dnv 
+        */
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+            <h1>Responsivo</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate voluptates blanditiis incidunt explicabo tenetur odio enim iste sint, distinctio quidem, in eos exercitationem, est nesciunt officia molestiae repudiandae porro provident Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, quam praesentium dignissimos eos saepe totam sapiente ipsum soluta aut sequi voluptatem minima recusandae? Accusamus rerum eligendi, ab ut excepturi tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            </p>
+            <picture>
+                <source media="(max-width : 400px)" srcset="imagens/irina-blok-pq.jpg">
+                <img src="imagens/irina-blok.jpg" alt="Irina">
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate voluptates blanditiis incidunt explicabo tenetur odio enim iste sint, distinctio quidem, in eos exercitationem, est nesciunt officia molestiae repudiandae porro provident Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, quam praesentium dignissimos eos saepe totam sapiente ipsum soluta aut sequi voluptatem minima recusandae? Accusamus rerum eligendi, ab ut excepturi tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci voluptatibus reprehenderit voluptate recusandae. 
+            </p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas, tabelas, formularios</title>
+    <link rel="stylesheet" href="tabela.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Pagina teste</h1>
+<h3>Listas</h3><br>
+<ol type="i">
+    <li>Café</li>
+    <li>
+        Cerveja
+        <ul style="list-style-type: square ;"> 
+            <li>Bhrama</li>
+            <li>Skol</li>
+            <li>Itaipava</li>
+        </ul>
+    </li>
+    <li>Mingau</li>
+</ol><br>
+<h3>Tabelas</h3><br>
+
+<table   border="0">
+    <thead>
+        <tr>
+            <td><strong>Iten 1</strong> </td>
+            <td><strong>Iten 2</strong></td>  
+            <td><strong>Iten 3</strong></td>   
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>...</td>
+            <td>...</td>     
+        </tr>
+    
+        <tr>
+            <td>...</td>
+            <td>...</td>     
+        </tr>
+    
+        <tr>
+            <td>...</td>
+            <td>...</td>     
+        </tr>
+    </tbody>
+    
+</table>
+
+<h3>Fórmularios</h3>
+
+<h4>Area de cadastro</h4>  
+<form action="form.html" method="POST">
+<label for="email">
+    Email:
+    <input type="email" id="email"><br><br>
+
+</label>
+ 
+<label for="nome">
+    Nome:
+     <input type="text" id="nome"><br><br>
+
+</label>
+
+<label for="senha">
+       Senha: 
+       <input type="password" id="senha"><br><br>
+
+</label>
+
+<label for="check">
+    Li e aceito os <a href="">termo de uso</a>  
+    <input type="checkbox" id="check"><br><br>
+
+</label>
+
+<label for="sexo">
+    Sexo: 
+        F<input type="radio" name="sexo">
+        M<input type="radio" name="sexo">
+        
+</label><br><br>
+
+<label for="descri">
+   Fale sobre você:<br><br>
+   <textarea name="descricao" id="descri" ></textarea>
+
+</label>
+
+<label for="">
+    Categoria: 
+
+    <select name="categoria" >
+        <option value="1">Categoria 1</option>
+        <option value="2">Categoria 2</option>
+        <option value="3">Categoria 3</option>
+        <option value="4">Categoria 4</option>
+   
+    </select> <br><br>
+</label>
+
+    <input type="submit" value="Cadastrar">
+   
+    
+</form>
+
+<h4>Area de login</h4>
+ <form action="form.html" method="GET">
+ User: <input type="text" name="usuario"> <input type="color"><br><br>
+ Data:  <input type="date"><br><br>
+ Mês:   <input type="moth"><br><br>
+ Periodo:  <input type="range"><br><br>
+ Buscar:   <input type="search"><br><br>
+Tel.:  <input type="tel"><br><br>
+Url:  <input type="url">
+    <input type="submit" value="login ">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+
+.teste{
+    width: 700px;
+    height: 250px;
+    background-color: greenyellow;
+}
+@media(max-width:600px){
+    .teste{
+   background-color: rgb(180, 230, 180);
+   width: 200px;}
+ 
+}

@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:  0px;
+    font-size: 17px;
+}
+
+h1{
+    font-family: Nerko One;
+}
+
+table{
+    text-align: center;
+    width: 600px;
+}
+
+th, td {
+    border : 1px solid black
+}
+table thead{
+    background-color: rgb(122, 120, 120);
+}
+table tbody{
+    background-color: greenyellow;
+}
+tbody tr:hover{
+    
+background-color: #eeeeee;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(66, 199, 66);
+}
+
+label{
+    display: block;
+    margin-top: 5px;
+}
+input[id= nome]{
+    width: 500px;
+    
+}
+ textarea [id="descri"]{
+    height: 200px;
+ }

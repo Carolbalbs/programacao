@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+.carol{
+    display: flex;
+    flex-flow: row wrap ;
+    background-color: gray;
+}
+.carol div{
+   
+   background-color: red;
+   width: 300px;
+   margin: 10px;
+   padding: 10px;
+}
+.text1 
+{
+   flex: 1;
+   background-color: red;
+   margin: 10px;
+   padding: 10px;
+}
+.text2 
+{
+   flex: 1;
+   background-color: red;
+   margin: 10px;
+   padding: 10px;
+}
+.text3 
+{
+   flex: 1;
+   background-color: red;
+   margin: 10px;
+   padding: 10px;
+}
+.text4 
+{
+   flex: 2;
+   background-color: red;
+   margin: 10px;
+   padding: 10px;
+}

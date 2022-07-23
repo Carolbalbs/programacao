@@ -1,0 +1,45 @@
+@keyframes anime{
+    0%{background-color:blue; top:0; left:0;}
+    25% {background-color:red; top:0; left:100;}
+    50%{background-color:yellow; top:100; left:100;}
+    75%{background-color:green; top: 100;left:0;}
+    100%{background-color:blue; top:0 ;left:0;} 
+}
+
+*{
+    box-sizing: border-box;
+}
+.animacao{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    animation: anime ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite ;
+}
+.exemplo{
+    margin-left: 250px ;
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    border: black solid ;
+    word-wrap: break-word;
+}
+.cores{
+    margin-top: 100px;
+    margin-left: 550px;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px;
+    transition: all 2s linear;
+    border-top-right-radius: 100px;
+    background: linear-gradient(blue, red)
+    
+}
+.cores:hover{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}

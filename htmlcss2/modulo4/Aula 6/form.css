@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    background-color: wheat;
+
+}
+form {
+    background-color: gray;
+    margin: auto;
+    width: 215px;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0.363);
+} 
+form input{
+   height: 35px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modeldo de caixas</title>
+    <style>
+        h1{/*Box level*/
+            background-color: lightgray;
+
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px; 
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+    
+
+            outline-width: 3px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+ /*Usando exemplos shorthand ta tag a*/
+        a{/*Inline-level*/
+            border: 10px solid red ;
+
+            padding: 10px;
+
+            margin: 30px 25px 30px 25px;
+
+            outline: 3px dashed orange;
+
+        }
+        /*
+        É possvivel mudar de box level para inline-level e vice-versa, basta alterar o display para block ou inline. display inline-block é inline mas possui algumas caracteristicas de bloco. 
+         */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa de box-level</h1>
+    <p>Paragrafos sao exemplos de box level mas os  <a href="⇋">links sao exemplos de caixas (box) inline-level.</a>Vamos ver como tudo isso funciona!</p>
+</body>
+</html>

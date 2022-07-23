@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+}
+.container_1{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+.menu{
+    align-items: center;
+    display: inline;
+
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}  
+nav a{
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: rgb(72, 72, 72);
+}
+.logo img{
+    max-width: 70px;
+    max-height: 70px;
+}
+.perfil img{
+    max-width: 25px;
+    max-height: 25px;
+}

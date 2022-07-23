@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-size:  30px;
+
+}
+p {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Nerko One;
+    text-transform: lowercase;
+    text-align: left;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    line-height: 15px;
+
+}

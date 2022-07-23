@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>07</title>
+</head>
+<body onload="numero()">
+
+</body>
+<script>
+    function numero() {
+/*
+        let numero1 = Number(prompt('Digite um número'))
+        let numero2 = Number(prompt('Digite um número novamente'))
+        let numero3 = Number(prompt('Digite um número novamente'))
+        let numero4 = Number(prompt('Digite um número novamente'))
+        let numero5 = Number(prompt('Digite um número novamente'))
+
+        if (numero1 > numero2  && numero1 > numero3 && numero1 > numero4 && numero1 > numero5) {
+            alert( `${numero1} é O MAIOR valor`)
+
+        } else if (numero2 > numero1  && numero2 > numero3 && numero2 > numero4 && numero2 > numero5) {
+            alert(`${numero2} é o MAIOR valor`)
+
+        } else if(numero3 > numero1  && numero3 > numero2 && numero3 > numero4 && numero3 > numero5) {
+           alert(`${numero3} é o MAIOR valor`)
+
+        } else if (numero4 > numero1  && numero4 > numero2 && numero4 > numero3 && numero4 > numero5){
+            alert(`${numero4} é o MAIOR valor`)
+
+        }else if (numero5 > numero1  && numero5 > numero2 && numero5 > numero3 && numero5 > numero4){
+            alert(`${numero5} é o MAIOR valor`)
+
+        }else{
+            alert(`error 404`)
+        }
+ while(contador < 5){
+            valor = Number(prompt('Informe um número'))
+            if (valor > maiorValor){
+                maiorValor = valor
+            }
+            contador++
+        }
+        alert(`O maior valor é ${maiorValor}`)
+                   */
+        let maiorValor = Number.NEGATIVE_INFINITY
+        let valor
+        let contador = 0
+
+
+        let menorValor = Number.POSITIVE_INFINITY
+        maiorValor = Number.NEGATIVE_INFINITY
+        for(let i = 0; i < 5; i++){
+            valor = Number(prompt('Informe um número'))
+
+            if (valor < menorValor){
+                menorValor = valor
+            }
+            if (valor > maiorValor){
+                maiorValor = valor
+            }
+        }
+        alert(`O menor valor é ${menorValor} e O maior valor é ${maiorValor}`)
+
+
+    }
+</script>
+</html>

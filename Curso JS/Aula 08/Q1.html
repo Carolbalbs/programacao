@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario =  Number (window.prompt("Quanto você ganha por hora?"))
+        var hora = Number (window.prompt("Qual número de horas trabalhadas no mês?"))
+        var cal = salario * hora 
+        window.alert(`Seu salário bruto é : ` + cal.toLocaleString ('pt-BR', {style:'currency', currency: 'BRL'}))
+        var cal2 = cal * 11/100
+         window.alert(`O valor pago ao IR é: `+ cal2.toLocaleString('pt-BR', {style:'currency', currency:'BRL'} ))
+        var cal3 = cal * 8/100 
+         window.alert(`O valor pago ao INSS é : ` +  cal3.toLocaleString('pt-BR', {style:'currency', currency:'BRL'} )) 
+        var cal4 = cal * 5/100
+         window.alert (`O valor pago ao Sindicato é : `+ cal4.toLocaleString('pt-BR', {style:'currency', currency:'BRL'} ))
+        var cal5 = cal2 + cal3 + cal4
+        var cal6 = cal - cal5 
+          window.alert(`Seu salario liquido é: ` + cal6.toLocaleString('pt-BR', {style:'currency', currency:'BRL'} ))  
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX06</title>
+</head>
+<body>
+    <h1>Faça um Programa que leia três números e mostre o maior deles.</h1>
+    
+    <div><strong>Numero 1</strong></div>
+    <p><strong> <input type="number" name="txtn1" id="txtn1"></strong></p>
+    <div><strong>Numero 2</strong></div>
+    <p><strong><input type="number" name="txtn2" id="txtn2"></strong></p>
+    <div><strong>Numero 3</strong></div>
+    <p><strong><input type="number" name="txtn3" id="txtn3"></strong></p>
+    <input type="button" value="comparar" onclick="pres()">
+    <div id=res><strong>Qual é o maior?</strong> </div>
+    <script>
+        function pres() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var tn3 = window.document.getElementById('txtn3')
+            var r = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var n3 = Number(tn3.value)
+        if (n1 > n2  && n1 > n3) {
+
+            res.innerHTML = `${n1} é O MAIOR valor`
+
+        } else if (n2 > n1 &&  n2 > n3) {
+
+            res.innerHTML = `${n2} é o MAIOR valor`
+        } else if( n3 > n1 && n3 > n2) {         
+            res.innerHTML = `${n3} é o MAIOR valor`
+        } else{
+            res.innerHTML = `error 404`
+        }
+        }
+    </script>
+</body>
+</html>

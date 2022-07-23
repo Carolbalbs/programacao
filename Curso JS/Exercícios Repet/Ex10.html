@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>10</title>
+</head>
+<body onload="intervalo()">
+
+</body>
+<script>
+//Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+  function intervalo() {
+      let numero_1 = parseInt(prompt(`Digite um número`))
+      let numero_2 = parseInt(prompt(`Digite novamente um número *É preciso que ocorra um intervalo de um ou mais números entre os dois números digitados*`))
+      let intervalo1 =  ''
+      let soma =  0
+      for (let i = Math.min(numero_1, numero_2); numero_1 >= 0 && numero_2 >= 0 && i <= Math.max(numero_1, numero_2); i++){
+
+          soma = numero_1 + numero_2
+         intervalo1 = intervalo1 + ' ' + (i+1)
+      }
+       alert(intervalo1)
+      alert(` A soma dos numeros é ${soma}`)
+  }
+
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>05</title>
+</head>
+<body onload="padaria()">
+
+</body>
+<script>
+    function padaria() {
+        let preco =  parseFloat(prompt('Qual o preço do pão?'))
+        let tabela =  'Panificadora a Pão de Ontem -\nTabela de preços';
+        for (let i = 1 ; i <= 50 ; i++){
+            tabela = tabela + '\n' + i + ' - R$ ' + (i * preco).toFixed(2)
+        }
+        alert(`Tabela de valores  ${tabela} `)
+    }
+
+</script>
+</html>

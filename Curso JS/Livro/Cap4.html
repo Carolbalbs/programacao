@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX013</title>
+</head>
+<body>
+    <script>
+        var vitoria = Number(prompt('Quantos jogos o futebol clube venceu?'))
+        var empate  = Number(prompt('Quantos jogou o futebol clube empatou'))
+        var derrota = Number(prompt('Quantos jogos o futebol clube perdeu?'))
+        var pontos = (vitoria*3)+ empate - derrota
+        alert(`O nosso time tem ${pontos} pontos!`)
+        if (pontos > 28 ) {
+            alert('Seu time está indo melhor que livros vellhos')
+        }else if( pontos == 28){
+            alert(`Seu time está empatado com livros velhos`)
+        }else {
+           alert('Seu time está indo pior que livros velhos') 
+        }
+
+    </script>
+</body>
+</html>

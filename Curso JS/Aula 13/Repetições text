@@ -1,0 +1,40 @@
+Laços testam expressões (V ou F )
+enquato a condição é verdadeira  ele repete até que ela se torne falsa
+
+while = Estrutura de repetição com teste lógico no inicio
+
+exemplo de função sem repetição while
+function comerPizza(){
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+}
+
+usando while :
+(enquanto houver fatia ele repete a condição)
+function comerPizza(){
+    while (temFatia){
+        comerFatia()
+    }
+}
+
+do while = Estrutura de repetição com teste lógico no final
+ do {
+
+ }while(codição)
+
+ For = Estrutura de repetição com variavél  de controle
+3 partes :
+ - inicio
+ - teste
+ - incremento
+ Usado para quando voce sabe onde voce sai e até onde voce chega ( ex.: imprima um numero de 1 a 20 )
+usar sempre com i , j(for dentro de outro for ) , k (um tericeiro for dentro de outros dois)
+
+ for (){
+ }

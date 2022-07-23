@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>24e</title>
+</head>
+<body onload="numero()">
+
+</body>
+<script>
+    function numero() {
+
+        let numeroqualquer1 = Number(prompt('Digite um número'))
+        let numeroqualquer2 = Number(prompt('Digite um  número novamente'))
+        let opçao = Number(prompt('Selecione a opção que deseja para descobrir se os números são : (1) - par ou ímpar | (2)- positivo ou negativo | (3)- inteiro ou decimal' ))
+        let resto1 = 0.00
+        let resto2 = 0.00
+
+        if (opçao == 1){
+            resto1 = numeroqualquer1 % 2
+            resto2 = numeroqualquer2 % 2
+            if (resto1 == 0){
+                alert(`Os numeros ${numeroqualquer1} é par !`)
+            }else {
+                alert(`Os numeros ${numeroqualquer1} é impar !`)
+            }if (resto2 == 0){
+                alert(`Os numeros ${numeroqualquer2} é par !`)
+            }else {
+                alert(`Os numeros ${numeroqualquer2} é impar !`)
+            }
+        }
+        if (opçao == 2){
+            if (numeroqualquer1 > 0){
+                alert(`${numeroqualquer1} é um numero positivo`)
+            }else {
+                alert(`${numeroqualquer1} é um numero negativo`)
+            }if (numeroqualquer2 > 0){
+                alert(`${numeroqualquer2} é um numero positivo`)
+            }else {
+                alert(`${numeroqualquer2} é um numero negativo`)
+            }
+        }else{
+            alert('Opção inexistente')
+        }
+
+
+
+
+
+    }
+    /*
+    if (opçao == 3){
+     if (numeroqualquer1) {
+            alert(`${numeroqualquer1} é um numero decimal`)
+        }else Math.round{
+            alert(`${numeroqualquer1} é um numero inteiro`)
+        }
+    }*/
+
+</script>
+</html>

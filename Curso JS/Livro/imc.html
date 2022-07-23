@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body onload="imc()">
+<button onclick="imc()">Teste IMC</button>
+</body>
+<script>
+    function imc() {
+        var pesoDoUsuario = Number(prompt('Qual seu peso?'))
+        var alturaDoUsuario = Number (prompt('Qual sua altura?'))
+        var calculaIMC = pesoDoUsuario/(2*alturaDoUsuario)
+        window.alert("O seu IMC é: " + calculaIMC)
+        if(calculaIMC > 18.5 && calculaIMC < 35) {
+            window.alert("OK! Seu IMC está entre os dois limites.")
+        }else{
+            window.alert("OK! Seu IMC não está entre os dois limites.")
+        }
+    }
+</script>
+</html>

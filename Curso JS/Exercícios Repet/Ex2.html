@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>02</title>
+</head>
+<body onload="login()">
+
+</body>
+<script>
+    function login() {
+
+        let usuario = prompt('Escolha um nome de usuário')
+        let senha = prompt('Digite sua senha')
+        while (usuario === senha){
+            alert('[ERROR] A sua senha não pode ser igual ao nome de usuário')
+            usuario = prompt('Escolha novamente um nome de usuário')
+            senha = prompt('Digite novamente uma senha valida sua senha')
+        }
+        alert('Cadastro realizado com sucesso!')
+    }
+</script>
+</html>

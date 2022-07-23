@@ -1,0 +1,19 @@
+<html>
+    <body onload="maior_valor()">
+
+    </body>
+</html>
+
+<script>
+    function maior_valor(){
+        let numero = 0
+        let maior = Number.NEGATIVE_INFINITY
+        for(let i = 0; i < 5; i++){
+            numero = Number(prompt('Informe um número'))
+            if(numero > maior){
+                maior = numero
+            }
+        }
+        alert(`O maior valor informado foi ${maior}`)
+    }
+</script>

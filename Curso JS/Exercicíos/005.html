@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX05</title>
+</head>
+<body>
+    <h1>Faça um programa para a leitura de duas notas parciais de um aluno.</h1>
+    
+    <div><strong>Nota 1</strong></div>
+    <p><input type="number" name="txtn1" id="txtn1"></p> 
+    <div><strong>Nota 2</strong></div>
+    <p><input type="number" name="txtn2" id="txtn2"></p> 
+    <input type="button" value="somar" onclick="media()">
+   <p><strong><div id = 'res'>Resultado</div></strong></p> 
+</body>
+<script>
+    function media(params) {
+        var tn1 = window.document.getElementById("txtn1")
+            var tn2 = window.document.getElementById("txtn2")
+            var res = window.document.getElementById("res")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1+n2 
+            var div = s / 2 
+    if (div < 7 ) {
+        alert('REPROVADO')
+    } else if ( div >= 10 ) {
+        alert('APROVADO COM DISTIÇÃO')
+    } else {
+        alert('APROVADO')
+    }
+    }
+</script>
+</html>

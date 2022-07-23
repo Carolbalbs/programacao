@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX04</title>
+</head>
+<body>
+    <h1>Faça um Programa que verifique se uma letra digitada é vogal ou consoante.</h1>
+   <div id= res>Digite a letra</div> 
+   <input type="text" name="txtl" id="txtl">
+   <input type="button" value="teste" onclick="testar()">
+   <script>
+       function testar() {
+           var txtl1 = window.document.getElementById('txtl')
+           var r = window.document.getElementById('res')
+           var n1 = (txtl1.value)
+           n1 = n1.toLowerCase()
+    
+        if (n1 == 'a'|| n1 == 'e'|| n1 == 'i'|| n1 =='o'||n1 =='u') {
+            res.innerHTML = 'Isso é vogal'
+        } else {
+            res.innerHTML = 'Isso é consoante'
+        }
+    }
+   </script>
+</body>
+</html>

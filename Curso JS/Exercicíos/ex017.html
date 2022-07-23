@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="anos()">
+
+</body>
+<script>
+    function anos() {
+        let diga_ano = Number(prompt('Digite um ano'))
+        let ano = 0.00 ;
+
+        if ( (ano%400 == 0)||(ano%4 == 0 && ano%100 != 0 )){
+            alert(`O ano ${diga_ano} é bissexto`)
+        } else {
+            alert(`O ano ${diga_ano} não é bissexto `)
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>14</title>
+</head>
+<body onload="quase_dois()">
+
+</body>
+<script>
+    function quase_dois(){
+        let preco = 1.99;
+        let tab =  'Lojas Quase Dois -\nTabela de preços';
+        for (let i = 1; i <= 50 ; i++){
+            tab = tab + '\n' + i + '- R$ ' + i * preco;
+        }
+        alert(` A tabela de valores é : ${tab}`);
+    }
+</script>
+</html>

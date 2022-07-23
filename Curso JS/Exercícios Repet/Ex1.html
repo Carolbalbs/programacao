@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>01</title>
+</head>
+<body onload="notas()">
+
+</body>
+<script>
+    function notas() {
+
+        let nota = Number (prompt('Digte uma nota de 0 a 10'))
+
+        while (nota < 0 || nota > 10 ){
+            alert('ERROR: Valor inválido. A nota deve estar entre 0 e 10.')
+            nota = Number(prompt('Digite uma nota de 0 a 10 novamente:'))
+        }
+        alert(`Valor dentro do padrão. A nota informada foi ${nota}`)
+    }
+</script>
+</html>

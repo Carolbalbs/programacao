@@ -1,0 +1,25 @@
+Tipos de operadores
+- Aritiméticos ( +; -; *; /; %; ** )
+Ordem de precedência
+()
+**
+* / %
++ -
+Atribuição simples
+var a = n
+Auto -Atribuição 
+c += 2
+n -= 0
+incremento
+++
+--
+Mas- Atribuição 
+- Relacionais (>; <; >=; <=; ==; !=)
+ Operadores boleanos 
+ false e true 
+- Lógicos(!; &&; ||)
+! negação  - primeiro 
+&& conjunção - segundo 
+|| disjunção - terceiro 
+- Ternário (?; :)
+teste ? true : false 

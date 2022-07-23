@@ -1,0 +1,17 @@
+<html>
+    <body onload="validar_senha()">
+
+    </body>
+</html>
+
+<script>
+    function validar_senha(){
+        let usuario = prompt('Informe o nome do usuário')
+        let senha = prompt('Informe sua senha')
+        while(usuario == senha){
+            alert('O nome de usuario não pode ser igual a da senha. Informe os dados novamente.')
+            usuario = prompt('Informe o nome do usuário')
+            senha = prompt('Informe sua senha')
+        }    
+    }
+</script>

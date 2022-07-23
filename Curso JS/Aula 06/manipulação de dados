@@ -1,0 +1,26 @@
+(number + number) para adição
+(string + string) para concatenação
+window.prompt = trata qualquer valor como string
+Conversão de string para number
+    Number.parseFloat
+    Number.parseInt
+    Number ( serve para deixar a linguagem decidir qual usar)
+Conversão de number para string
+    String(n)
+    n.toString()
+    n = EX do valor que eu quero converter
+Formatando strings 
+var s = 'Javascript'
+' Estou aprendendo s ' // não faz interpretação 
+' Estou aprendendo' + s  // usa concatenação
+` Estou aprendendo ${s} `// usa template string
+s.length // quantos caracteres a string tem
+s.toUpperCase() // Tudo para Maiúscula  
+s.toLowerCase() //Tudo para Minúscula
+
+toFixed para formatar numeros 
+replece para trocar pontos por virgulas 
+Linha para colocar valor do real em numeros
+ n1.toLocaleString ('pt-BR', {style: 'currency', currency: 'BRL'})
+<strong> / </strong> = Deixar em negrito
+</br> ou <br/> = quebrar linha de texto

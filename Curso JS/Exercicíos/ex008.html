@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX08</title>
+</head>
+<body>
+    <h1>Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.</h1>
+    <div><strong>MERCADINHO - Digite o numero para saber o valor</strong></div>
+    <p><div><strong>1.Biscoito </strong></div></p>
+    <p><div><strong>2.Miojo</strong></div></p>
+    <p><div><strong>3.Salgadinho</strong></div></p>
+    <input type="number" name="txtl" id="txtl">
+    <input type="button" value="selecionar" onclick="sel()">
+    <script>
+        function sel() {
+            var txtl1 = window.document.getElementById('txtl')
+            var n = Number(txtl1.value)
+            var n1 = Number(3.50)
+            var n2 = Number(2.70)
+            var n3 = Number (3.00)
+            if (n =='1') {
+                alert('O valor do biscoito é R$3.50')
+            } else if (n == '2') {
+                alert('O valor do miojo é R$2.70')
+            }else if ( n =='3') {
+                alert('O valor do salgadinho é R$3.00')
+            } else {
+                alert('Código incorreto ou inválido tente novamente')
+            }
+           
+               prompt('Deseja saber qual deve comprar?')
+
+           
+            if (n2 < n1 && n2 < n3) {
+              alert('Você deve comprar o miojo que custa R$2.70')  
+            }else if (n1 > n2 && n3 > n3) {
+                alert('Esse produto não é o mais barato')
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

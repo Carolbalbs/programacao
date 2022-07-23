@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EX16</title>
+</head>
+<body onload="calculo_raizes()">
+
+</body>
+<script>
+/*
+
+
+Faça :
+um programa para calular raízes (ax + bx + c )
+Programa:
+pede:
+    valor de : a ,b ,c
+realiza:
+ o calculo da função:
+  b quadrado - 4ac - -b +- raiz delta/2a
+Baseado em:
+    condições para o valor de delta
+Informe :
+    usuário informar o valor de A igual a zero, a equação não é do segundo grau e o programa não deve fazer pedir
+    os demais valores, sendo encerrado;
+    delta calculado for negativo, a equação não possui raizes reais. Informe ao usuário e encerre o programa;
+    delta calculado for igual a zero a equação possui apenas uma raiz real; informe-a ao usuário;
+    delta for positivo, a equação possui duas raiz reais; informe-as ao usuário;
+ */
+function calculo_raizes() {
+
+    let valora = Number(prompt('Insira o valor de A'))
+
+    if (valora === 0) {
+        alert('O valor do coeficiente a é igual a zero. Infelizmente, não poderemos calcular as raízes. ')
+    } else {
+        let valorb = Number(prompt('Insira o valor de B'))
+        let valorc = Number(prompt('Insira o valor de C'))
+
+        let quadradob = valorb*valorb
+        let delta = quadradob - 4*(valora*valorc)
+
+        if(delta < 0){
+            alert('A equação não possui raízes reais.')
+        }else if(delta === 0){
+            let valornegb = valorb * (-1)
+            let div = 2 * valora
+            let raiz = valornegb / div
+            alert(`Duas raizes reais iguais ${raiz} :` )
+        } else {
+            let raizdedelta = Math.sqrt(delta)
+            let valornegb = valorb * (-1)
+            let div = 2 * valora
+
+            x1 = (valornegb + raizdedelta) / div
+            x2 = (valornegb - raizdedelta) / div
+
+            //(Math.round(num * 100) / 100).toFixed(2);
+            alert(`Valor de delta positivo !! As raízes da equação são ${x1} e ${x2} `)
+        }
+    }
+}
+</script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Seja Bem vindo ao CAROL.FLIX!</h1>
+    </header>
+    <section>
+        
+        <div>
+         <h2><strong>Cadastro do filme </strong></h2>
+        </div>
+        <br/>
+        <br/>
+
+        <div>
+        <strong>Titulo do filme</strong>
+        <input type="text" id="titulo_filme">
+        <br/>
+        <br/>
+
+        <strong>Gênero</strong>
+        <br/>
+        <br/>
+        <input type="radio" name="genero" value="acao_aven" checked>
+        <label for="genero">Ação e aventura</label>
+        <br/>
+        <br/>
+
+        <input type="radio" name="genero" value="drama">
+        <label for="genero">Drama</label>
+        <br/>
+        <br/>
+        
+        <input type="radio" name="genero" value="come_roman">
+        <label for="genero">Comédia romântica</label>
+        <br/>
+        <br/>
+
+        <input type="radio" name="genero" value="ficcao">
+        <label for="genero">Ficção científica</label>
+        <br/>
+        <br/>
+
+        <input type="radio" name="genero" value="terror">
+        <label for="genero">Terror</label>
+        <br/>
+        <br/>
+
+        <strong>Duração</strong>
+        <br/>
+        <br/>
+
+        <input type="radio" name="duracao" value="quarenta" checked>
+        <label for="duracao">45 - 55 minutos</label>
+        <br/>
+        <br/>
+
+        <input type="radio" name="duracao" value="setenta">
+        <label for="duracao">60 - 70 minutos</label>
+        <br/>
+        <br/>
+
+        <input type="radio" name="duracao" value="noventa">
+        <label for="duracao">90 ou mais minutos</label>
+        <br/>
+        <br/>
+
+        <strong>Classificação indicativa</strong>
+        <br/>
+        <input type="radio" name="clasificacao" id="livre">
+        <label for="classificacao"><img src="livre.jpg" alt=" "></label>
+        <input type="radio" name="clasificacao" id="quartoze">
+        <label for="classificacao"><img src="quatorze.jpg" alt=" "></label>
+        <input type="radio" name="clasificacao" id="dezesseis">
+        <label for="classificacao"><img src="dezesseis.jpg" alt=" "></label>
+        <input type="radio" name="clasificacao" id="dezeito">
+        <label for="classificacao"><img src="dezoito.jpg" alt=" "></label>
+        <br/>
+        <br/>
+
+        <strong>Ano</strong>
+        <input type="number" id="ano" min="1930" max="2020">
+        <br/>
+        <br/>
+
+        <strong>Protagonistas</strong>
+        <br/>
+        Ator/Atriz<input type="text" id="protagonista1">
+        <br/><br>
+        Ator/Atriz<input type="text" id="protagonista2">
+        <br/>
+        <br/>
+
+        <strong>Avalições</strong>
+        <br/>
+        <input type="radio" name="avaliacao" id="um">
+        <label for="avaliacao"><img src="1.jpg" alt=" "></label>
+        <input type="radio" name="avaliacao" id="dois">
+        <label for="avaliacao"><img src="2.jpg" alt=" "></label>
+        <input type="radio" name="avaliacao" id="tres">
+        <label for="avaliacao"><img src="3.jpg" alt=" "></label>
+        <br/>
+        <br/>
+        <button onclick="inserir_filme()">CADASTRAR</button>
+        
+        <a href="cadastrados.html" target="_blank" title="VER">
+           
+            <button onclick="exibir_filme()">Exibir Cadastrados</button>
+    
+        </a>
+
+        </div>
+        
+        <div id="resulta">
+
+        </div>
+        
+    </section>
+   
+    <p><footer>&copy;CarolBalbino.Dev</footer></p>
+    <script src = "codigo.js"></script>
+</body>
+</html>

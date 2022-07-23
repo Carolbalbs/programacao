@@ -1,0 +1,34 @@
+<html>
+    <body>
+       Início do intervalo: <input type="number" id="inicio" />
+       <br />
+       Fim fo intervalor: <input type="number" id="fim" />
+       <br>
+       <button onclick="intervalos()">Gerar Intervalo</button>
+        <div id ="resultado"></div>
+    </body>
+</html>
+
+<script>
+
+    function intervalos(){
+        let inicio = document.getElementById('inicio')
+        let fim = document.getElementById('fim')
+        let resultado = document.getElementById('resultado')
+
+        let inicio_v = Number(inicio.value)
+        let fim_v = Number(fim.value)
+        let valores = ''
+        let soma = 0
+
+        for(let i = inicio_v + 1; i < fim_v; i++){
+            valores = valores + ' ' + i
+            soma = i + soma
+        }
+
+        resultado.innerHTML = valores + '<br />'
+        resultado.innerHTML += 'Soma = ' + soma
+        
+        
+    }
+</script>

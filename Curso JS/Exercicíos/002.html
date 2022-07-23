@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX01</title>
+</head>
+<body>
+    <h1>Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.</h1>
+    <div id = res>Qual é o sinal do número?</div>
+    <input type="number" name="txt1" id="txt1">
+    <input type="button" value="pres" onclick="checar()">
+    <script>
+        function checar() {
+          var txn1 = window.document.getElementById('txt1')
+          var n1 = Number(txn1.value)
+          var r = window.document.querySelector('div#res')
+          if (n1 >= 0) {
+            res.innerHTML = ('Esse valor é positivo +') 
+         } else if (n1 <= 0) {
+             res.innerHTML = ('Esse valor é negativo -')
+         } else
+         res.innerHTML = ('ERRO')
+         
+        }
+        
+
+    </script>
+</body>
+</html>

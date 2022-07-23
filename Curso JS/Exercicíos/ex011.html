@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="br-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX011</title>
+</head>
+<body>
+    <h1>As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver
+        o programa que calculará os reajustes.</h1>
+    <p>Digite seu salario</p>
+    <input type="number" name="salario" id="salario">
+    <input type="button" value="calcular" onclick="calcular_reajuste()">
+
+</body>
+<script>
+    /* Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+    salários até R$ 280,00 (incluindo) : aumento de 20%
+    salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+    salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+    salários de R$ 1500,00 em diante : aumento de 5%
+     Após o aumento ser realizado, informe na tela:
+    o salário antes do reajuste;
+    o percentual de aumento aplicado;
+    o valor do aumento;
+    o novo salário, após o aumento.
+
+
+    Faça:
+        um programa
+    Rebece:
+        o salário de um colaborador
+    Reajuste:
+        o salário
+    Baseado em:
+        salários até R$ 280,00 (incluindo) :
+            aumento de 20%
+        salários entre R$ 280,00 e R$ 700,00 :
+            aumento de 15%
+        salários entre R$ 700,00 e R$ 1500,00 :
+            aumento de 10%
+        salários de R$ 1500,00 em diante :
+            aumento de 5%
+    Realizado:
+        o reajuste
+    Informe:
+        o salário antes do reajuste;
+        o percentual de aumento aplicado;
+        o valor do aumento;
+        o novo salário, após o aumento.
+    */
+
+
+    function calcular_reajuste2() {
+
+        let salario = document.getElementById('salario');
+        salario = Number(salario.value);
+
+        let reajuste = 0.00;
+        let porcentagem_reajuste = 0.00;
+        let salario_reajustado = 0.00;
+
+        if(salario <= 280){
+            reajuste = salario * 0.20;
+            salario_reajustado = salario + reajuste;
+            porcentagem_reajuste = 20.0;
+        }else if (salario <= 700){
+            reajuste = salario * 0.15;
+            salario_reajustado = salario + reajuste;
+            porcentagem_reajuste = 15.0;
+        }else if(salario <= 1500){
+            reajuste = salario * 0.10;
+            salario_reajustado = salario + reajuste;
+            porcentagem_reajuste = 10.0;
+        }else{
+            reajuste = salario * 0.05;
+            salario_reajustado = salario + reajuste;
+            porcentagem_reajuste = 5.0;
+        }
+
+        alert(`Seu salário antes do reajuste era : R$${salario}
+                O aumento que você recebeu é de ${porcentagem_reajuste}%
+                O valor do aumento é de R$${reajuste}
+                Seu novo salário é : R$${salario_reajustado}`);
+    }
+
+    function calcular_reajuste() {
+        var salario = window.document.getElementById('salario')
+        var sel = Number(salario.value)
+        // salarios até 280
+        var cal = sel * 20 / 100
+        var au = sel + cal
+        // entre 280 e 700
+        var cal1 = sel * 15 / 100
+        var au1 = sel + cal1
+        //entre 700 e 1500
+        var cal2 = sel * 10 / 100
+        var au2 = sel + cal2
+        // a partir de 1500
+        var cal3 = sel * 5 / 100
+        var au3 = cal3 + sel
+
+        sel = 0
+
+        if (sel <= 1 && sel >= 280) {
+            alert(`Seu salário antes do reajuste era : R$${sel}
+                O aumento que você recebeu é de 20%
+                O valor do aumento é de R$${cal}
+                Seu novo salário é : R$${au}`)
+        } else if (sel == 700) {
+            alert(`Seu salário antes do reajuste era : R$${sel}
+                O aumento que você recebeu é de 15%
+                O valor do aumento é de R$${cal1}
+                Seu novo salário é : R$${au1}`)
+        } else if (sel == 1500) {
+            alert(`Seu salário antes do reajuste era : R$${sel}
+                O aumento que você recebeu é de 10%
+                O valor do aumento é de R$${cal2}
+                Seu novo salário é : R$${au2}`)
+        } else if (sel == 2000) {
+
+        }else{
+            alert("Eu amo está certa! - Carol Balbino")
+        }
+    }
+</script>
+</html>

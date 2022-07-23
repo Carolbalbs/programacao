@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX001</title>
+    <style>
+       h1{
+        font: normal 20t Arial ;
+        color: blue;
+        }
+    
+    </style>
+</head>
+
+<body>
+    
+    <h1>Faça um Programa que peça dois números e imprima o maior deles</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="comparar" onclick="prescione()">
+    <div id=res>Qual é o maior?</div>
+    <script>
+        function prescione()
+        {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var r = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            if (n1 > n2) {
+
+                res.innerHTML = (`<p>${n1} é o maior valor<p>`)
+            } else if (n2 > n1) {
+
+                res.innerHTML = (`<p>${n2} é o maior valor<p>`)
+            } else {
+
+                res.innerHTML = (`<p>IGUAIS <p>`)
+            }
+        }    
+           
+
+    </script> 
+</body>
+</html>

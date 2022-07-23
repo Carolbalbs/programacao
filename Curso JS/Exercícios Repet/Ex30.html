@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>14</title>
+</head>
+<body onload="caixa()">
+
+</body>
+<script>
+    function caixa(){
+        let total = 0.00;
+        let produto = Number.POSITIVE_INFINITY;
+        while(produto !== 0){
+            produto = Number(prompt('Digite o valor do produto'))
+            total = total + produto
+        }
+        let cash = Number(prompt(`O valor total da compra é :R$ ${total}
+                    Quanto em dinheiro você vai pagar?`))
+        while (cash < total){
+                cash = Number(prompt(`O valor total da compra é :R$ ${total}
+                    Informe o valor equivalente ou maior que o total!!`))
+        }
+        alert(`O seu troco é :R$ ${cash - total}`)
+    }
+</script>
+</html>

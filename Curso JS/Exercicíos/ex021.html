@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="saque()">
+
+</body>
+<script>
+    /*faca : programa para caixa eletronico
+    programa: perguta valor de saque e informa quantas notas de cada valor serao fornecidas
+    notas :1, 5, 10, 50 e 100 reais
+    condição : valor min. de 10 reais e max de 600 reais
+     */
+    function saque() {
+        let saque_valor = parseInt(prompt('Quanto desejar sacar?'))
+
+        let nota100 = Math.floor( saque_valor / 100 )
+        let resto = saque_valor % 100
+        let nota50 = Math.floor( resto / 50 )
+        resto = resto % 50
+        let nota10 = Math.floor( resto / 10 )
+        resto = resto % 10
+        let nota5 = Math.floor( resto / 5 )
+        let nota1 = resto % 5
+
+        if (saque_valor >= 10 && saque_valor <= 600){
+            alert(`${nota100} notas de 100, ${nota50} notas de 50, ${nota10} notas de 10,  ${nota5} notas de 5 e ${nota1} notas de 1;`)
+        }else{
+            alert('Valor incorreto!')
+        }
+
+    }
+</script>
+</html>

@@ -1,0 +1,187 @@
+<html>
+    <body>
+        <h1>CADASTRO DE ALUNOS</h1>
+        <p>
+            <strong>Nome do aluno</strong>
+            <input type="text" id = "nome_aluno">
+            <br>
+            <br>
+            <strong>N° de matricula </strong>
+            <input type="number" id = "matricula">
+            <br>
+            <br>
+            <strong>Idade</strong>
+            <input type="number" id = "idade">
+            <br>
+            <br>
+            <strong>Sexo</strong> <br>
+            <input type="radio" id="masculino" name="sexo" value="m">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="sexo" value="f">
+            <label for="feminino">Feminino</label><br>
+            <input type="radio" id="outro" name="sexo" value="o">
+            <label for="outro">Outro</label>
+            <br>
+            <br>
+            <strong>Score</strong>
+            <input type="number" id = "score">
+            <br>
+            <br>
+            <button onclick="inserir()">Cadastrar</button>
+            <button onclick="exibir_cadastro()">Exibir Cadastrados</button>
+            <button onclick="exibir_relatorio_alunas()">Relatório de alunas</button>
+            <button onclick="relatorio_idade()">Relatório por idade</button>
+            <button onclick="score_exibir()">Exibir score acima ou iguais a 7</button>     
+            <button onclick="alunos_letra_c()">Nomes com C</button>
+        </p>
+        <div id="resultado">
+
+        </div>
+    </body>
+</html>
+<script>
+    alunos = []
+
+    function inserir(){
+        let txtNomeAluno = document.getElementById ("nome_aluno")
+        let nome = txtNomeAluno.value
+
+        let numMatricula = document.getElementById ("matricula")
+        let n_matricula = Number(numMatricula.value)
+
+        let numIdade = document.getElementById ("idade")
+        let n_idade = Number(numIdade.value)
+
+        let numScore = document.getElementById ("score")
+        let n_score = Number(numScore.value)
+
+        let radioSexo = document.getElementsByName("sexo")
+        let txt_sexo = ''
+        for(let i = 0; i < radioSexo.length; i++){
+            if(radioSexo[i].checked){
+                txt_sexo = radioSexo[i].value
+            }
+        }
+
+        let aluno = {}
+        aluno["nome"] = nome
+        aluno["matricula"] = n_matricula
+        aluno["idade"] = n_idade
+        aluno["score"] = n_score
+        aluno["sexo"] = txt_sexo
+
+        alunos.push(aluno)
+        txtNomeAluno.value = ''
+        numMatricula.value = ''
+        numIdade.value = ''
+        numScore.value = ''
+        radioSexo.value= ''
+        alert("Aluno cadastrado com sucesso!")
+    }
+
+    function ordenar_nome(aluno1, aluno2){
+        if(aluno1["nome"] > aluno2["nome"]){
+            return 1;
+        }else if(aluno1["nome"] < aluno2["nome"]){
+            return -1;
+        }
+        return 0;
+    }
+
+    function exibir_cadastro() {
+        let resultado = document.getElementById('resultado')
+        let mensagem = `<h1> Alunos Cadastrados: </h1><br/>`
+        alunos.sort(ordenar_nome)
+            for (let i = 0; i < alunos.length; i++) {
+            const aluno = alunos[i];
+            mensagem += `Aluno: ${aluno["nome"]} <br/>
+                        Nº de Matricula: ${aluno["matricula"]} <br/>
+                        Nº de Matricula: ${aluno["matricula"]} <br/>
+                        Idade: ${aluno["idade"]} <br/>
+                        Score: ${aluno["score"]} <br/>
+                        Sexo: ${aluno["sexo"]}<br/> <br/>`
+                       
+        }
+         
+        resultado.innerHTML = mensagem
+    }
+
+    function exibir_relatorio_alunas(){
+        let resultado = document.getElementById('resultado')
+        let mensagem = `<h1> Alunas Cadastradas: </h1><br/>`
+        for (let i = 0; i < alunos.length; i++) {
+            const aluno = alunos[i];
+            if (aluno["sexo"] == "f"){
+                 mensagem += `Aluno: ${aluno["nome"]} <br/>
+                        Nº de Matricula: ${aluno["matricula"]} <br/>
+                        Idade: ${aluno["idade"]} <br/>
+                        Score: ${aluno["score"]} <br/>
+                        Sexo: ${aluno["sexo"]}<br/> <br/>`
+            }
+           
+        }
+        resultado.innerHTML = mensagem
+    }
+    function relatorio_idade() {
+        let resultado = document.getElementById('resultado')
+        let mensagem = `<h1> Alunas Cadastradas Maiores de 18: </h1><br/>`
+        for (let i = 0; i < alunos.length; i++) {
+            const aluno = alunos[i];
+
+            if ( aluno["idade"] >= 18 && aluno["sexo"] == "f" ){
+                 mensagem += `Aluno: ${aluno["nome"]} <br/>
+                        Nº de Matricula: ${aluno["matricula"]} <br/>
+                        Idade: ${aluno["idade"]} <br/>
+                        Score: ${aluno["score"]} <br/>
+                        Sexo: ${aluno["sexo"]}<br/> <br/>`
+            }
+            
+        }
+        resultado.innerHTML = mensagem
+    
+    }
+    function score_exibir() {
+        let resultado = document.getElementById('resultado')
+        let mensagem = `<h1> Alunos Cadastrados com score a partir de 7: </h1><br/>`
+        for (let i = 0; i < alunos.length; i++) {
+            const aluno = alunos[i];
+
+            if (aluno["score"] >= 7) {
+
+                mensagem += `Aluno: ${aluno["nome"]} <br/>
+                        Nº de Matricula: ${aluno["matricula"]} <br/>
+                        Idade: ${aluno["idade"]} <br/>
+                        Score: ${aluno["score"]} <br/>
+                        Sexo: ${aluno["sexo"]}<br/> <br/>`
+            }
+            resultado.innerHTML = mensagem 
+        }
+        
+    }
+    function alunos_letra_c() {
+        let resultado = document.getElementById('resultado')
+        let mensagem = `<h1> Alunos que tem a letra C </h1><br/>`
+        for (let i = 0; i < alunos.length; i++) {
+            const aluno = alunos[i];
+            if (aluno["nome"].startsWith("C")) {
+                mensagem += `Aluno: ${aluno["nome"]} <br/>
+                        Nº de Matricula: ${aluno["matricula"]} <br/>
+                        Idade: ${aluno["idade"]} <br/>
+                        Score: ${aluno["score"]} <br/>
+                        Sexo: ${aluno["sexo"]}<br/> <br/>`
+            }
+        }
+        resultado.innerHTML = mensagem
+        
+    }
+/*
+Um filtro por alunas que sejam maiores de idade
+
+Um filtro para alun!s que tenham um score maior que
+
+um filtro por alunes que tenham nome que comeca com C
+
+exibir os alunos em ordem afalbetica
+alfabetica*/
+</script>
+

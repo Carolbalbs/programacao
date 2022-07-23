@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Feira</title>
+</head>
+<body onload="fruta()">
+
+</body>
+<script>
+    function fruta() {
+
+        let fruta2 = prompt('FRUTAS NO ESTOQUE : morango e maça. O que vai comprar ?')
+        let maça = 0.00
+        let morango = 0.00
+        let valor = 0.00
+        let percentual = 0.00
+        let desconto = 0.00
+
+        if (fruta2 == 'morango'){
+          let peso = Number(prompt('Quantos kg vai levar?'))
+            if (peso > 5 ){
+
+                morango = 2.20*peso
+
+            }else {
+                morango = 2.50*peso
+
+            }alert(`O valor do morango é R$${morango} reais`)
+
+            if (peso > 8 || valor >= 25){
+
+                valor = morango
+                percentual = valor*0.10
+                desconto = valor - percentual
+                alert(`O valor do morango com DESCONTO  é R$${desconto} reais`)
+
+            }
+        }
+        if (fruta2 == 'maça'){
+         let peso = Number(prompt('Quantos kg vai levar?'))
+            if (peso > 5 ){
+
+                maça = 1.50 * peso
+
+
+            }else {
+
+            maça = 1.80*peso
+
+            }alert(`O valor da maça é R$${maça} reais`)
+
+            if (peso > 8 || valor >= 25){
+
+                maça = 1.50*peso
+                valor = maça
+                percentual = valor*0.10
+                desconto = valor - percentual
+                alert(`O valor da maça com DESCONTO é R$${desconto} reais`)
+
+            }
+        }else {
+            alert('Produto Inexistente ou fora do estoque!!')
+        }
+    }
+</script>
+</html>

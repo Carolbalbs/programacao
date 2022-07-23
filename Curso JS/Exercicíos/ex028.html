@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Açougue</title>
+</head>
+<body onload="mercado()">
+
+</body>
+<script>
+    /* gere um cupom fiscal,
+    contendo as informações da compra: tipo e quantidade de carne,
+    preço total,
+    tipo de pagamento,
+    valor do desconto
+    e valor a pagar.
+
+     */
+    function mercado() {
+
+        let carne = prompt('Que tipo de carne vai comprar ? ESTOQUE DISPONIVEL : file duplo, alcatra ou picanha. ')
+        let pagamento = 0.00
+        let file_duplo = 0.00
+        let alcatra = 0.00
+        let picanha = 0.00
+        let valor = 0.00
+        let percentual = 0.00
+        let desconto = 0.00
+
+        if (carne == 'file duplo') {
+            let peso = Number(prompt('Quantos kg vai levar?'))
+            if (peso > 5) {
+                   file_duplo = 5.80 * peso
+
+                }else {
+                    file_duplo = 4.90 * peso
+                }
+               pagamento =  prompt('Como vai pagar?')
+
+            if(pagamento == 'cartão' ){
+
+                    valor = file_duplo
+                    percentual = valor * 0.05
+                    desconto = valor - percentual
+                       alert(`---CUMPOM FISCAL---
+             CARNE TIPO : file duplo
+             QUANTIDADE : ${peso}Kg
+             TOTAL A PAGAR :R$${file_duplo} reais
+             TIPO DE PAGAMENTO : Cartão
+             VALOR DO DESCONTO : 5%
+             NOVO VALOR A PAGAR : R$${desconto} reais `)
+                } else {
+
+                       alert(`---CUMPOM FISCAL---
+             CARNE TIPO : file duplo
+             QUANTIDADE : ${peso}Kg
+             TOTAL A PAGAR :R$${file_duplo} reais
+             TIPO DE PAGAMENTO : Dinheiro
+             SEM DESCONTO!!`)
+                   }
+        }
+        if (carne == 'alcatra'){
+            let peso = Number(prompt('Quantos kg vai levar?'))
+            if (peso > 5) {
+               alcatra = 6.80 * peso
+
+            }else {
+                alcatra = 5.90 * peso
+            }
+            pagamento =  prompt('Como vai pagar?')
+
+            if(pagamento == 'cartão' ){
+
+                valor = alcatra
+                percentual = valor * 0.05
+                desconto = valor - percentual
+
+                alert(`---CUMPOM FISCAL---
+             CARNE TIPO : file duplo
+             QUANTIDADE : ${peso}Kg
+             TOTAL A PAGAR :R$${alcatra} reais
+             TIPO DE PAGAMENTO : Cartão
+             VALOR DO DESCONTO : 5%
+             NOVO VALOR A PAGAR : R$${desconto} reais `)
+
+            } else {
+
+                alert(`---CUMPOM FISCAL---
+             CARNE TIPO : file duplo
+             QUANTIDADE : ${peso}Kg
+             TOTAL A PAGAR :R$${alcatra} reais
+             TIPO DE PAGAMENTO : Dinheiro
+             SEM DESCONTO!!`)
+            }
+        }
+        if (carne == 'picanha'){
+            let peso = Number(prompt('Quantos kg vai levar?'))
+            if (peso > 5) {
+                picanha = 7.80 * peso
+
+                }else {
+                picanha = 6.90 * peso
+            }
+            pagamento =  prompt('Como vai pagar?')
+
+            if(pagamento == 'cartão' ){
+
+                valor = picanha
+                percentual = valor * 0.05
+                desconto = valor - percentual
+
+                alert(`---CUMPOM FISCAL---
+             CARNE TIPO : file duplo
+             QUANTIDADE : ${peso}Kg
+             TOTAL A PAGAR :R$${picanha} reais
+             TIPO DE PAGAMENTO : Cartão
+             VALOR DO DESCONTO : 5%
+             NOVO VALOR A PAGAR : R$${desconto} reais `)
+
+                }else if (pagamento == "dinheiro"){
+
+                    alert(`---CUMPOM FISCAL---
+                 CARNE TIPO : file duplo
+                 QUANTIDADE : ${peso}Kg
+                 TOTAL A PAGAR :R$${picanha} reais
+                 TIPO DE PAGAMENTO : Dinheiro
+                 SEM DESCONTO!!`)
+            }
+        }else {
+            alert('Produto Inexistente ou fora do estoque!!')
+        }
+    }
+
+
+</script>
+</html>

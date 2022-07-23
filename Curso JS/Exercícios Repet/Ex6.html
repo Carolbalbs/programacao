@@ -1,0 +1,29 @@
+Ex5.html<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>06</title>
+</head>
+<body onload="numeros()">
+
+</body>
+<script>
+    // imprima na tela os números de 1 a 20, um abaixo do outro.
+    function numeros() {
+
+       /* let numero = 1
+
+        while (numero <= 20 ){
+           alert(`${numero}`)
+            numero++ //numero + 1
+        }*/
+
+        let listaNumeros = ''
+        for(let i = 0; i < 20; i++){
+            listaNumeros = listaNumeros + (i+1) + '\n'
+            // listaNumeros = listaNumeros + ' ' + (i+1)
+        }
+        alert(listaNumeros)
+    }
+</script>
+</html>

@@ -1,0 +1,40 @@
+Variéis são espaços na memoria usados para guardar dados   
+Declarando Variavéis
+vaga a1 = carro1
+        = carro2
+        = null
+
+= - Significa  "Recebe"
+Para declarar uma variavél devo ultilizar : var ou let
+ var n1 =
+ var n2 =
+ var n3 = 
+Atribuir valores 
+ var n1 = 5
+ var n2 = 8
+ var n3 = 14
+Para delimitar string existem 3 formas
+ "  "
+ '  '
+ `  `
+Regras para os identificadores de variavéis
+- Podem começar com letras, $ ou _
+- Não podem começar com números 
+- É possivel usar letras ou números
+- É possivel usar acentos ou símbolo
+- Não podem conter espaços 
+- Não podem ser palavras reservadas
+- Mauisculas e minusculas fazem diferença
+- Tente ultilizar nomes coerentes para as variavéis
+Tipos de variavéis
+typeof
+    number
+        infinity
+        NaN
+    string 
+    boolean
+    null
+    undefined
+    object
+        Array
+    function

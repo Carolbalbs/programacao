@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>05</title>
+</head>
+<body onload="fatorialn()">
+
+</body>
+<script>
+    function fatorialn() {
+        let numero = parseInt(prompt('Digite um número'))
+        let fatorial = 1
+        for (let i = numero; i > 0 ; i = i - 1){
+            fatorial = fatorial * i
+        }
+        alert(`O fatorial de ${numero} é : ${fatorial}`)
+    }
+</script>
+</html>

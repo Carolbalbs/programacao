@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <h1>NOVA COLEÇÃO PRIMAVERA-VERÃO COVID-19</h1>
+        <p>
+            <strong>Nome da fruta:</strong>
+            <input type="text" id="nome_fruta" />
+            <button onclick="inserir()">Inserir valor</button>
+            <br>
+            <button onclick="exibir_lista_frutas()">Exibir as frutas</button>
+        </p>
+        <div id="resultado">
+
+        </div>
+
+    </body>
+</html>
+<script>
+    frutas = []
+    function inserir(){
+        let txtNomeFruta = document.getElementById('nome_fruta')
+        let fruta = txtNomeFruta.value
+        frutas.push(fruta)
+        txtNomeFruta.value = ''
+    }
+    function exibir_lista_frutas(){
+        let resultado = document.getElementById('resultado')
+        let mensagem = `<h1>Tamanho do vetor é ${frutas.length} </h1><br/>`
+        for(let i  = 0; i < frutas.length; i++){
+            mensagem += `A fruta da posicao ${i} e: ${frutas[i]} <br />`
+        }
+        resultado.innerHTML = mensagem
+    }
+
+</script>

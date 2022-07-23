@@ -1,0 +1,27 @@
+<html>
+    <body>
+       <h1>Tabuada</h1>
+       Informe um valor de 1 a 10:
+       <input type="number" id="numero" />
+       <br />
+       <button onclick="calcular()">Gerar Resultado</button>
+        <div id ="resultado"></div>
+    </body>
+</html>
+
+<script>
+
+    function calcular(){
+        let numero = document.getElementById('numero')
+        let resultado = document.getElementById('resultado')
+        let numero_v = Number(numero.value)
+        let multiplicar = 1
+        let valores = ''
+        for(let i = 1; i <= 100; i++){
+            multiplicar =  numero_v * i
+            valores += numero_v + ' x ' + i + ' = ' + multiplicar + '<br />'
+        }
+
+        resultado.innerHTML = valores + '<br />'
+    }
+</script>

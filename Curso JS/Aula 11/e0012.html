@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Where are you from?</h1>
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="verificar" onclick="diga()">
+    <div id='res'>Diga em que país você nasceu</div>
+    <script>
+        function diga() {
+            var pais = window.document.querySelector('input#txt2')
+            var pa = String(txt.value)
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Você é do país ${pa}`
+            if (pa == 'estados unidos') {
+                res.innerHTML += `<p>você é americano<p>`
+            } else { 
+                res.innerHTML += `<p>você é estrangeiro<p>`
+            }
+        }    
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+mousemove
+mouseenter
+mousedown
+mouseup
+mouseout
+click
+Função : conjunto de linhas que são executadas apenas quando o evento ocorre
+
+function ação()
+    {
+        bloco
+    } 

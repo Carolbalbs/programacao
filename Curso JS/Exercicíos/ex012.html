@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX012</title>
+</head>
+<body>
+    <h1>Faça um programa para o cálculo de uma folha de pagamento. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.</h1>
+        Desconto do IR:
+        Salário Bruto até 900 (inclusive) - isento
+        Salário Bruto até 1500 (inclusive) - desconto de 5%
+        Salário Bruto até 2500 (inclusive) - desconto de 10%
+        Quanto você ganha por hora?<input type="number" name="valor1" id="valor1">
+        Qual número de horas trabalhadas no mês?<input type="number" name="valor2" id="valor2">
+        <input type="button" value="clique" onclick="salario()">
+    <script>
+      function salario() {
+          let salario = window.document.getElementById('valor1')
+          salario = Number(salario.value)
+          let hora = window.document.getElementById('valor2')
+          hora = Number(hora.value)
+          let inss = 0.00
+          let sind = 0.00
+          let fgts = 0.00
+          let ir = 0.00
+          let salariobruto = salario*hora
+          let total_desconto= 0.00
+          let salarioliquido = 0.00
+
+          if (salario <= 900){
+              inss = salariobruto*0.10
+              sind = salariobruto*0.03
+              fgts = salariobruto*0.11
+              total_desconto = inss + sind
+              salarioliquido =  salariobruto - total_desconto
+
+              alert(`Salario bruto : R$ ${salariobruto}
+                     IR : Isento
+                     FGTS : R$ ${fgts}
+                     Sindicato : R$ ${sind}
+                     Inss : R$ ${inss}
+                     Salario liquido : R$ ${salarioliquido} `)
+          }else if (salario <= 1500){
+              inss = salariobruto*0.10
+              sind = salariobruto*0.03
+              fgts = salariobruto*0.11
+              ir = salariobruto*0.05
+              total_desconto = inss + sind  + ir
+              salarioliquido =  salariobruto - total_desconto
+              alert(`Salario bruto : R$ ${salariobruto}
+                     IR : R$ ${ir}
+                     FGTS : R$ ${fgts}
+                     Sindicato : R$ ${sind}
+                     Inss : R$ ${inss}
+                     Salario liquido : R$ ${salarioliquido} `)
+          }else if (salario <= 2500){
+              inss = salariobruto*0.10
+              sind = salariobruto*0.03
+              fgts = salariobruto*0.11
+              ir = salariobruto*0.10
+              total_desconto = inss + sind + ir
+              salarioliquido =  salariobruto - total_desconto
+
+              alert(`Salario bruto : R$ ${salariobruto}
+                     IR : R$ ${ir}
+                     FGTS : R$ ${fgts}
+                     Sindicato : R$ ${sind}
+                     Inss : R$ ${inss}
+                     Salario liquido : R$ ${salarioliquido} `)
+          }
+
+      }
+
+
+    </script>
+</body>
+</html>

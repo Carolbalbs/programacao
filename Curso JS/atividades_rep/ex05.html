@@ -1,0 +1,37 @@
+<html>
+    <body onload="habitante()">
+
+    </body>
+</html>
+
+<script>
+    function habitante(){
+        let paisA = Number(prompt('Digite o contingente populacional do país A'))
+        let paisB = Number(prompt('Digite o contingente populacional do país B'))
+        let contador_anos = 0
+        
+        console.log(`paisA ${paisA} e paisB ${paisB}`)
+
+        let crescimentoA = parseFloat(prompt('Digite a taxa de anual de crescimento do país A ( ex: digite 0.03 para representar um crescimento de 3%) '))
+        console.log('crescimentoA '+ crescimentoA)
+        console.log('Type = '+typeof(crescimentoA))
+        while (crescimentoA.toFixed(3) > Number(0).toFixed(3)) {
+            alert('Invalido !! ( ex: digite 0.03 para representar um crescimento de 3%) ')
+            crescimentoA = parseFloat(prompt('Digite a taxa de anual de crescimento do país A'))
+        }
+        
+        let crescimentoB = parseFloat(prompt('Digite a taxa de anual de crescimento do país B ( ex: digite 0.15 para representar um crescimento de 15%) '))
+        while (crescimentoB > 0) {
+            alert('Invalido !! ( ex: digite 0.15 para representar um crescimento de 15%) ')
+            crescimentoB = parseFloat(prompt('Digite a taxa de anual de crescimento do país B'))
+        }
+
+        while ( paisA <= paisB ) {
+            paisA = paisA + paisA * crescimentoA
+            paisB = paisB + paisB * crescimentoB
+            contador_anos = contador_anos + 1   
+       }
+          
+        alert(`A população do país A demorou ${contador_anos} anos para ultrapassar a população do país B.`)
+    }
+</script>

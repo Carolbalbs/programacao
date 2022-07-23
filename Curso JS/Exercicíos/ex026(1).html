@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Posto de gasolina</title>
+</head>
+<body onload="posto()">
+
+</body>
+<script>
+    function posto() {
+
+        //declaração das variáveis
+        let alcool = 1.90
+        let gasolina = 2.50
+        let litroCombustivel = 0.00
+        let desconto = 0.00
+        let precoCombustivel
+        let nomeCombustivel = ''
+
+        //entrada de dados
+        let tipoCombustivel = prompt('Qual tipo de combustivel deseja? (A) para Alcool e (G) para gasolina')
+        let quantidadeLitro = Number(prompt('Quantos litros deseja colocar?'))
+
+        //processamento
+        if(tipoCombustivel === 'A'){
+            precoCombustivel = alcool
+            nomeCombustivel = 'Álcool'
+            if (quantidadeLitro <= 20){
+                desconto = 0.03
+            }else {
+                desconto = 0.05
+            }
+        }else if(tipoCombustivel === 'G'){
+            precoCombustivel = gasolina
+            nomeCombustivel = 'Gasolina'
+            if (quantidadeLitro <= 20){
+                desconto = 0.04
+            }else {
+                desconto = 0.06
+            }
+        }else{
+            precoCombustivel = -1
+        }
+
+        litroCombustivel = quantidadeLitro * precoCombustivel
+        desconto = litroCombustivel * desconto
+        let descontoTotal = litroCombustivel - desconto
+
+        // saída
+        if(descontoTotal > 0){
+            alert(`O preço da ${nomeCombustivel} é R$ ${descontoTotal}`)
+        }else{
+            alert('Código de Combustível Invalido')
+        }
+    }
+</script>
+</html>

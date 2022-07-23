@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX09</title>
+</head>
+<body>
+    <h1>Faça um Programa que leia três números e mostre-os em ordem decrescente.</h1>
+    <p><div><strong>Primeiro número </strong></div></p>
+    <input type="number" name="n1" id="n1">
+    <p><div><strong>Segundo número</strong></div></p>
+    <input type="number" name="n2" id="n2">
+    <p><div><strong>Terceiro número</strong></div></p>
+    <input type="number" name="n3" id="n3">
+    <input type="button" value="Ordenar" onclick="clic()">
+    <script>
+        function clic() {
+            var num1 = window.document.getElementById('n1') 
+            var num2 = window.document.getElementById('n2')
+            var num3 = window.document.getElementById('n3')
+            var v1 = (num1.value)
+            var v2 = (num2.value)
+            var v3 = (num3.value)
+            var meuArray = (num1, num2, num3)
+           alert(meuArray.sort(function (a,b) {return a < b })) 
+        
+        }
+    </script>
+</body>
+</html>

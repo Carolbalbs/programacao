@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>04</title>
+</head>
+<body onload="habitantes()">
+
+</body>
+<script>
+    function habitantes() {
+        let populacaoA = 80000
+        let populacaoB = 200000
+        let taxaCrescimentoA = 0.03
+        let taxaCrescimentoB = 0.015
+        let contadorAnos = 0
+
+        while(populacaoA <= populacaoB){
+            populacaoA = populacaoA + populacaoA * taxaCrescimentoA
+            populacaoB = populacaoB + populacaoB * taxaCrescimentoB
+            contadorAnos = contadorAnos + 1 // contadorAnos++
+        }
+
+        alert(`A população do país A demorou ${contadorAnos} anos para ultrapassar a população do país B.`)
+    }
+</script>
+</html>

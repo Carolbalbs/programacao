@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+</head>
+<body>
+   <!--Faça um programa que leia dois números
+    e se a soma deles for maior que 10 diga parabéns, 
+    senão diga otario-->
+
+    <h1><strong>Insira os números</strong></h1>
+    <div>
+        <strong>Numero 1</strong>
+        <input id= "numero_1" type= "number" >
+    </div>
+    <br/>
+    <br/>
+    <div>
+        <strong>Numero 2</strong>
+        <input id = "numero_2" type= "number">
+        <br/>
+        <br/>
+        <button onclick="teste()"><strong>TESTE</strong></button>
+    </div>
+</body>
+</html>
+<script >
+    function teste() {
+
+let numero1 = document.getElementById("numero_1")
+let valor_1 = Number(numero1.value)  
+
+let numero2 = document.getElementById("numero_2")
+let valor_2 = Number(numero2.value)  
+
+let soma = valor_1 + valor_2
+
+if (soma > 10) {
+    window.alert(`PARABENS o valor ${soma} é maior que 10`)
+}else{
+    window.alert(`Otario.`)
+}
+    
+}
+
+</script>

@@ -1,0 +1,44 @@
+<html>
+    <body onload="validar_itens()">
+
+    </body>
+</html>
+
+<script>
+    /*Nome: maior que 3 caracteres;
+        Idade: entre 0 e 150;
+        Salário: maior que zero;
+        Sexo: 'f' ou 'm';
+        Estado Civil: 's', 'c', 'v', 'd';*/
+    function validar_itens(){
+        let nome = prompt('Informe o seu nome do usuário')
+        while(nome.length <= 3){
+            alert('O nome de usuario precisa ter mais caracters . Informe os dados novamente.')
+            nome = prompt('Informe o nome do usuário')   
+        }    
+        
+        let idade = parseInt(prompt('Informe sua idade')) 
+        while(idade < 0 || idade > 150){
+            alert('A idade do usuario precisa ser entre 0 e 150 . Informe os dados novamente.')
+            idade = parseInt(prompt('Informe sua idade'))
+        }
+
+        let salario = Number(prompt('Informe o seu salario'))
+        while(salario < 0 ){
+            alert('Salario invalido  . Informe os dados novamente.')
+            salario = Number(prompt('Informe o seu salario'))
+        }
+        
+        let sexo = prompt('Informe qual o seu sexo')
+        while(sexo != 'f' && sexo != 'm' ){
+            alert('Sexo invalido  . Informe os dados novamente.')
+            sexo = prompt('Informe qual o seu sexo')
+        }
+
+        let estado_civil = prompt('Informe o estado civil')
+        while(estado_civil !='s'&& estado_civil != 'c' && estado_civil !='v' && estado_civil !='d'){
+            alert('O estado_civil não existe. Informe os dados novamente.')
+            estado_civil = prompt('Informe o estado civil')
+        }    
+    }
+</script>

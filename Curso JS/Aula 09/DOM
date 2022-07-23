@@ -1,0 +1,31 @@
+Arvore DOM (Document Object Model) - acessar os elementos da pagina diretamente para o java script
+window
+ location
+ document
+    html
+     head 
+            meta 
+            title
+     body
+        h1
+        p
+        p
+        strong
+        div
+ history
+ Selecionando elementos 
+ Por marca
+    getElementsByTagName()
+    [] - para selecionar
+    n.innerText - Exibr texto Selecionando
+ Por ID ( .)
+    getElementByID
+ Por Nome
+    getElementsByName
+ Por Classe 
+    getElementsByClassName
+ Por Seletor (#)
+    querySelector()
+    querySelectorAll()
+innerText = Só muda o texto 
+innerhtml= é possivel colocar tags html 

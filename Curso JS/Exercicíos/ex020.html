@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="media()">
+
+</body>
+<script>
+/*
+faça : programa que pede 3 notas
+progrma : calcula a media
+
+ */
+function media() {
+    let nota1 = Number(prompt('Digite nota 1'))
+    let nota2 = Number(prompt('Digite nota 2'))
+    let nota3 = Number(prompt('Digite nota 3'))
+    let nota_total = nota1 + nota2 + nota3
+    let media = nota_total/3
+    if (media == 10){
+        alert('APROVADO COM DISTINÇÃO')
+    }else if (media<7){
+        alert('REPROVADO')
+    }else  if (media => 7){
+        alert('APROVADO ')
+    }
+}
+</script>
+</html>

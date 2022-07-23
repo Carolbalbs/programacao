@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Vetores</title>
+</head>
+<body onload="menor_valor()">
+
+</body>
+<script>
+
+    function maior_valor() {
+        /*Faça um programa que imprima o maior número entre 10 números informados. */
+
+        let valor_maior = Number.NEGATIVE_INFINITY;
+        for (let numero = 0; numero <= 10; numero++) {
+            let numero2 = parseInt(prompt('Informe um numero'));
+            if (numero2 > valor_maior) {
+                valor_maior = numero2
+            }
+        }
+        alert(`O maior número entre eles é ${valor_maior}`)
+    }
+
+
+    function menor_valor() {
+        let valor_menor = Number.POSITIVE_INFINITY;
+        for (let i = 0 ; i < 4; i++){
+            let numero = parseInt(prompt('Informe um numero'))
+            if (numero < valor_menor){
+                valor_menor = numero
+            }
+        }
+        alert(`O menor número entre eles é ${valor_menor}`)
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="numerointeiro()">
+
+</body>
+<script>
+    /*
+    faça : programa que LE um numero int
+    mostra: dezena centena e unidade no plural
+     */
+    function numerointeiro() {
+        let numero_inteiro = parseInt(prompt('Digite um numero menor que 1000'))
+        let unidade = numero_inteiro % 10
+        let dezena = Math.floor((numero_inteiro % 100) / 10)
+        let centena = Math.floor(numero_inteiro / 100)
+
+        if (numero_inteiro <1000){
+
+            alert(`${centena} centenas, ${dezena} dezenas e ${unidade} unidades`)
+        }else {
+            alert('Numero invalido digite novamente')
+            parseInt(prompt('Digite um numero menor que 1000'))
+        }
+
+            }
+</script>

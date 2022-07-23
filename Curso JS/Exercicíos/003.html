@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03</title>
+    <style>
+       h1{
+        font: normal 20t Arial ;
+        color: blue;
+        }
+    
+    </style>
+</head>
+
+<body>
+    
+    <h1>Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.</h1>
+    <div id='res'><p>Qual seu sexo? : <strong>(F)</strong> para Feminino <strong>(M)</strong> para Masculino </p></div>
+    <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="mostre" onclick="compare()">
+    <script></script>
+    <script>
+        function compare()
+        {
+            var tn1 = window.document.getElementById('txtn1')
+            var r = window.document.getElementById('res')
+            var n1 = (tn1.value)
+            
+           if (n1.toUpperCase() == 'F' ) {
+               window.alert('Feminino')
+           } else if (n1.toUpperCase() =='M' ) {
+               window.alert ('Masculino')
+           } else {
+               window.alert('Sexo Inválido')
+           }
+        }
+    </script> 
+
+</body>
+</html>

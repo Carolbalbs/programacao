@@ -1,0 +1,44 @@
+
+body{
+    margin:20px;
+    background-color: red;
+}
+h1{
+    font-family: 'Archivo Black', sans-serif;
+}
+.UML{
+    margin: auto ;
+    padding: 10px;
+    height : 600px;
+    width: 1200px;
+    background-color: aqua;
+}
+.contaDigital{
+ 
+    margin: auto;
+    height :600px;
+    width: 400px;
+    background-color: wheat;
+    border-style: groove;
+    border-width: 1px;
+    border-color: black ;
+}
+#metodos{
+    margin-top: 0px;
+    height :70px;
+    width: 400px;
+    background-color: azure;
+    border-style: groove;
+    border-width: 1px;
+    border-color: black ;
+}
+#chave{
+    
+    margin-left: 0px;
+    height: 526px;
+    width: 45px;
+    background-color: crimson;
+    border-style: groove;
+    border-width: 1px;
+    border-color: black ;
+}

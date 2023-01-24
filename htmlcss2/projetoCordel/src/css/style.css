@@ -1,0 +1,29 @@
+html, body{
+    min-height: 100vh;
+    background-color: rgb(237, 220, 31);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+section{
+    background-color: beige;
+    width: 250px;
+}
+.id{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+header > h1:hover,.id a:hover{
+text-decoration: underline;
+}
+

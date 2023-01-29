@@ -1,6 +1,6 @@
-html, body{
+ body{
     min-height: 100vh;
-    background-color: rgb(237, 220, 31);
+    background-color: darkgray;
 }
 header{
     background-color: black;
@@ -14,16 +14,34 @@ header > h1{
 header > p{
     padding-bottom: 50px;
 }
-section{
-    background-color: beige;
-    width: 250px;
-}
-.id{
-    background-color: black;
-    text-align: center;
+header a,footer a {
     color: white;
-}
-header > h1:hover,.id a:hover{
-text-decoration: underline;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
+header > h1:hover, footer> a:hover{
+text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 3.5vw;
+    padding-left: 30px
+
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
